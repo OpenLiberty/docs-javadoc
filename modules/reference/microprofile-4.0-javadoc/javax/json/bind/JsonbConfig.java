@@ -1,42 +1,19 @@
 /*
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ * Copyright (c) 2016, 2018 Oracle and/or its affiliates. All rights reserved.
  *
- * Copyright (c) 2016, 2017 Oracle and/or its affiliates. All rights reserved.
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0, which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
  *
- * The contents of this file are subject to the terms of either the GNU
- * General Public License Version 2 only ("GPL") or the Common Development
- * and Distribution License("CDDL") (collectively, the "License").  You
- * may not use this file except in compliance with the License.  You can
- * obtain a copy of the License at
- * https://oss.oracle.com/licenses/CDDL+GPL-1.1
- * or LICENSE.txt.  See the License for the specific
- * language governing permissions and limitations under the License.
+ * This Source Code may also be made available under the following Secondary
+ * Licenses when the conditions for such availability set forth in the
+ * Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+ * version 2 with the GNU Classpath Exception, which is available at
+ * https://www.gnu.org/software/classpath/license.html.
  *
- * When distributing the software, include this License Header Notice in each
- * file and include the License file at LICENSE.txt.
- *
- * GPL Classpath Exception:
- * Oracle designates this particular file as subject to the "Classpath"
- * exception as provided by Oracle in the GPL Version 2 section of the License
- * file that accompanied this code.
- *
- * Modifications:
- * If applicable, add the following below the License Header, with the fields
- * enclosed by brackets [] replaced by your own identifying information:
- * "Portions Copyright [year] [name of copyright owner]"
- *
- * Contributor(s):
- * If you wish your version of this file to be governed by only the CDDL or
- * only the GPL Version 2, indicate your decision by adding "[Contributor]
- * elects to include this software in this distribution under the [CDDL or GPL
- * Version 2] license."  If you don't indicate a single choice of license, a
- * recipient has the option to distribute your version of this file under
- * either the CDDL, the GPL Version 2 or to extend the choice of license to
- * its licensees as provided above.  However, if you add GPL Version 2 code
- * and therefore, elected the GPL Version 2 license, then the option applies
- * only if the new code is made subject to such option by the copyright
- * holder.
+ * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  */
+
 package javax.json.bind;
 
 import javax.json.bind.adapter.JsonbAdapter;
@@ -53,14 +30,14 @@ import java.util.Optional;
 
 /**
  * <p>
- * <a name="supportedProps"></a>
+ * <a id="supportedProps"></a>
  * <b>Supported Properties</b><br>
  * <blockquote>
  * <p>
  * All JSON Binding providers are required to support the following set of properties.
  * Some providers may support additional properties.
  * <dl>
- *   <dt><tt>jsonb.to.json.formatted</tt> - java.lang.Boolean
+ *   <dt><code>jsonb.to.json.formatted</code> - java.lang.Boolean
  *   <dd>Controls whether or not the {@link javax.json.bind.Jsonb Jsonb} {@code toJson()}
  *       methods will format the resulting JSON data with line breaks and indentation. A
  *       true value for this property indicates human readable indented
@@ -68,13 +45,13 @@ import java.util.Optional;
  *       Default value is false (unformatted) if this property is not specified.
  * </dl>
  * <dl>
- *   <dt><tt>jsonb.to.json.encoding</tt> - java.lang.String
+ *   <dt><code>jsonb.to.json.encoding</code> - java.lang.String
  *   <dd>The {@link javax.json.bind.Jsonb Jsonb} serialization {@code toJson()} methods
  *       will default to this property for encoding of output JSON data. Default
  *       value is 'UTF-8' if this property is not specified.
  * </dl>
  * <dl>
- *   <dt><tt>jsonb.from.json.encoding</tt> - java.lang.String
+ *   <dt><code>jsonb.from.json.encoding</code> - java.lang.String
  *   <dd>The {@link javax.json.bind.Jsonb Jsonb} deserialization {@code fromJson()}
  *       methods will default to this property encoding of input JSON data if the
  *       encoding cannot be detected.

@@ -51,7 +51,7 @@ import java.util.Set;
  * </pre>
  * 
  * <p>
- * Java EE components may obtain an instance of <tt>BeanManager</tt> from {@linkplain javax.naming JNDI} by looking up the name
+ * Jakarta EE components may obtain an instance of <tt>BeanManager</tt> from {@linkplain javax.naming JNDI} by looking up the name
  * {@code java:comp/BeanManager}.
  * </p>
  * 
@@ -136,10 +136,10 @@ public interface BeanManager {
 
     /**
      * Return the set of beans which have the given required type and qualifiers and are available for injection in the module
-     * or library containing the class into which the <tt>BeanManager</tt> was injected or the Java EE component from whose JNDI
+     * or library containing the class into which the <tt>BeanManager</tt> was injected or the Jakarta EE component from whose JNDI
      * environment namespace the <tt>BeanManager</tt> was obtained, according to the rules of typesafe resolution. If no
      * qualifiers are given, the {@linkplain javax.enterprise.inject.Default default qualifier} is assumed.
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return beans discovered by the container before the {@link AfterBeanDiscovery} event is fired.
      *
@@ -156,9 +156,9 @@ public interface BeanManager {
 
     /**
      * Return the set of beans which have the given EL name and are available for injection in the module or library containing
-     * the class into which the <tt>BeanManager</tt> was injected or the Java EE component from whose JNDI environment namespace
+     * the class into which the <tt>BeanManager</tt> was injected or the Jakarta EE component from whose JNDI environment namespace
      * the <tt>BeanManager</tt> was obtained, according to the rules of EL name resolution.
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return beans discovered by the container before the {@link AfterBeanDiscovery} event is fired.
      * 
@@ -172,7 +172,7 @@ public interface BeanManager {
     /**
      * Returns the {@link javax.enterprise.inject.spi.PassivationCapable} bean with the given identifier.
      *
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return beans discovered by the container before the {@link AfterBeanDiscovery} event is fired.
      * 
@@ -187,7 +187,7 @@ public interface BeanManager {
     /**
      * Apply the ambiguous dependency resolution rules to a set of {@linkplain Bean beans}.
      *
-     * <p/>
+     * <br>
      Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return beans discovered by the container before the {@link AfterBeanDiscovery} event is fired.
      * 
@@ -203,7 +203,7 @@ public interface BeanManager {
     /**
      * Validate a certain {@linkplain InjectionPoint injection point}.
      *
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only validate injection points discovered by the container before the {@link AfterBeanDiscovery} 
      * event is fired.
@@ -220,7 +220,7 @@ public interface BeanManager {
      * Fire an event and notify observers.
      *
      * <p>
-     * This method is deprecated from CDI 2.0 and {@link #getEvent())} should be used instead.
+     * This method is deprecated from CDI 2.0 and {@link #getEvent()} should be used instead.
      * </p>
      *
      * @param event the event object
@@ -238,7 +238,7 @@ public interface BeanManager {
     /**
      * Return an ordered set of {@linkplain ObserverMethod observer methods} for an event.
      *
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return observers discovered by the container before the {@link AfterBeanDiscovery} event is fired.
      * 
@@ -256,10 +256,10 @@ public interface BeanManager {
 
     /**
      * Return an ordered list of {@linkplain Decorator decorators} for a set of bean types and a set of qualifiers and which are
-     * enabled in the module or library containing the class into which the <tt>BeanManager</tt> was injected or the Java EE
+     * enabled in the module or library containing the class into which the <tt>BeanManager</tt> was injected or the Jakarta EE
      * component from whose JNDI environment namespace the <tt>BeanManager</tt> was obtained.
      *
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return decorators discovered by the container before the {@link AfterBeanDiscovery} event is fired.
      * 
@@ -277,9 +277,9 @@ public interface BeanManager {
     /**
      * Return an ordered list of enabled {@linkplain Interceptor interceptors} for a set of interceptor bindings and a type of
      * interception and which are enabled in the module or library containing the class into which the <tt>BeanManager</tt> was
-     * injected or the Java EE component from whose JNDI environment namespace the <tt>BeanManager</tt> was obtained.
+     * injected or the Jakarta EE component from whose JNDI environment namespace the <tt>BeanManager</tt> was obtained.
      *
-     * <p/>
+     * <br>
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer, 
      * this method will only return interceptors discovered by the container before the {@link AfterBeanDiscovery} event is 
      * fired.
@@ -642,7 +642,7 @@ public interface BeanManager {
      * Obtains an {@link Instance} object to access to beans instances.
      *
      * The returned <tt>Instance</tt> object can only access instances of  beans that are available for injection in the module
-     * or library containing the class into which the <tt>BeanManager</tt> was injected or the Java EE component from whose JNDI
+     * or library containing the class into which the <tt>BeanManager</tt> was injected or the Jakarta EE component from whose JNDI
      * environment namespace the <tt>BeanManager</tt> was obtained, according to the rules of typesafe resolution.
      *
      * Note that when called during invocation of an {@link AfterBeanDiscovery} event observer,

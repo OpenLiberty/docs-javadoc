@@ -36,34 +36,37 @@ import static java.lang.annotation.ElementType.FIELD;
  * zero or more dependencies as arguments. {@code @Inject} can apply to at most
  * one constructor per class.
  *
- * <p><tt><blockquote style="padding-left: 2em; text-indent: -2em;">@Inject
+ * <blockquote><tt>@Inject
  *       <i>ConstructorModifiers<sub>opt</sub></i>
  *       <i>SimpleTypeName</i>(<i>FormalParameterList<sub>opt</sub></i>)
  *       <i>Throws<sub>opt</sub></i>
- *       <i>ConstructorBody</i></blockquote></tt>
+ *       <i>ConstructorBody</i></tt>
+ *       </blockquote>
  *
  * <p>{@code @Inject} is optional for public, no-argument constructors when no
  * other constructors are present. This enables injectors to invoke default
  * constructors.
  *
- * <p><tt><blockquote style="padding-left: 2em; text-indent: -2em;">
+ * <blockquote><tt>
  *       {@literal @}Inject<sub><i>opt</i></sub>
  *       <i>Annotations<sub>opt</sub></i>
  *       public
  *       <i>SimpleTypeName</i>()
  *       <i>Throws<sub>opt</sub></i>
- *       <i>ConstructorBody</i></blockquote></tt>
- *
+ *       <i>ConstructorBody</i></tt>
+ * </blockquote>
+
  * <p>Injectable fields:
  * <ul>
  *   <li>are annotated with {@code @Inject}.
  *   <li>are not final.
  *   <li>may have any otherwise valid name.</li></ul>
  *
- * <p><tt><blockquote style="padding-left: 2em; text-indent: -2em;">@Inject
+ * <blockquote><tt>@Inject
  *       <i>FieldModifiers<sub>opt</sub></i>
  *       <i>Type</i>
- *       <i>VariableDeclarators</i>;</blockquote></tt>
+ *       <i>VariableDeclarators</i>;</tt>
+ * </blockquote>
  *
  * <p>Injectable methods:
  * <ul>
@@ -74,12 +77,13 @@ import static java.lang.annotation.ElementType.FIELD;
  *   <li>may have any otherwise valid name.</li>
  *   <li>accept zero or more dependencies as arguments.</li></ul>
  *
- * <p><tt><blockquote style="padding-left: 2em; text-indent: -2em;">@Inject
+ * <blockquote><tt>@Inject
  *       <i>MethodModifiers<sub>opt</sub></i>
  *       <i>ResultType</i>
  *       <i>Identifier</i>(<i>FormalParameterList<sub>opt</sub></i>)
  *       <i>Throws<sub>opt</sub></i>
- *       <i>MethodBody</i></blockquote></tt>
+ *       <i>MethodBody</i></tt>
+ * </blockquote>
  *
  * <p>The injector ignores the result of an injected method, but
  * non-{@code void} return types are allowed to support use of the method in
@@ -93,7 +97,7 @@ import static java.lang.annotation.ElementType.FIELD;
  *     &#064;Inject public Car(Engine engine) { ... }
  *
  *     // Injectable field
- *     &#064;Inject private Provider&lt;Seat> seatProvider;
+ *     &#064;Inject private Provider&lt;Seat&gt; seatProvider;
  *
  *     // Injectable package-private method
  *     &#064;Inject void install(Windshield windshield, Trunk trunk) { ... }
@@ -121,7 +125,7 @@ import static java.lang.annotation.ElementType.FIELD;
  *
  * <pre>
  *   public class Car {
- *     &#064;Inject private <b>@Leather</b> Provider&lt;Seat> seatProvider;
+ *     &#064;Inject private <b>@Leather</b> Provider&lt;Seat&gt; seatProvider;
  *
  *     &#064;Inject void install(<b>@Tinted</b> Windshield windshield,
  *         <b>@Big</b> Trunk trunk) { ... }
