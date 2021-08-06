@@ -5,7 +5,7 @@ $(function () {
     )
   ) {
     var jd = window.top.location.href;
-    jd = jd.substring(jd.indexOf("microprofile-4.0-javadoc") + 25, 0);
+    jd = jd.substring(jd.indexOf("microprofile-4.0-javadoc") + 25);
     var pack = jd.substring(0, jd.lastIndexOf("/"));
     var port =
       window.top.location.port !== "" ? ":" + window.top.location.port : "";
