@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!-- ========================================= -->
+<!-- This is the plugin for declaring the help -->
+<!-- ========================================= -->
+<plugin name = "WebSphere Application Server Liberty Core Javadoc"
+        id = "com.ibm.websphere.javadoc.liberty.doc"
+        version ="22.0.0"
+        provider-name = "IBM">
+    <extension point="org.eclipse.help.toc">
+        <toc file="toc_liberty_core.xml" primary="false" extradir="." />
+        <toc file="toc_ndmp.xml" primary="false" extradir="." />
+        <toc file="toc_nd.xml" primary="false" extradir="." />
+        <toc file="toc_ndi.xml" primary="false" extradir="." />
+        <toc file="toc_ndz.xml" primary="false" extradir="." />      
+        <toc file="toc_base.xml" primary="false" extradir="." />
+        <toc file="toc_basei.xml" primary="false" extradir="." />
+        <toc file="toc_express.xml" primary="false" extradir="." />
+        <toc file="toc_expressi.xml" primary="false" extradir="." />
+        <toc file="toc_solo.xml" primary="false" extradir="." />
+    </extension>
+
+</plugin>
