@@ -1,0 +1,5 @@
+com.ibm.websphere.cache
+com.ibm.websphere.cache.exception
+com.ibm.websphere.exception
+com.ibm.ws.cache.spi
+com.ibm.wsspi.cache

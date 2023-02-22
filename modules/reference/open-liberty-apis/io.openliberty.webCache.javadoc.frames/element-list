@@ -1,0 +1,3 @@
+com.ibm.websphere.command
+com.ibm.websphere.command.web
+com.ibm.websphere.servlet.cache
