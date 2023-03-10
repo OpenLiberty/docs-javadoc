@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":38};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -109,8 +109,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>javax.websocket.server.ServerContainer</code>, <code>javax.websocket.WebSocketContainer</code></dd>
 </dl>
 <hr>
-<pre>public interface <span class="typeNameLabel">WsWsocServerContainer</span>
+<pre>@Deprecated
+public interface <span class="typeNameLabel">WsWsocServerContainer</span>
 extends javax.websocket.server.ServerContainer</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Since websocket-2.1 - This SPI is no longer necessary: the jakarta.websocket.server.ServerContainer now has upgradeHttpToWebSocket as part of the WebSocket 2.1 API.</div>
+</div>
 <div class="block">This interface provides WebSphere specific extensions to WebSocket ServerContainer support.
  
  Example:
@@ -137,7 +141,7 @@ extends javax.websocket.server.ServerContainer</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -150,7 +154,9 @@ extends javax.websocket.server.ServerContainer</pre>
          javax.websocket.server.ServerEndpointConfig&nbsp;sec,
          java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;pathParams)</code></th>
 <td class="colLast">
-<div class="block">Performs a WebSocket upgrade on provided HttpServletRequest and HttpServletResponse with the specified ServerEndpointConfig.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Since websocket-2.1 - Use jakarta.websocket.server.ServerContainer#upgradeHttpToWebSocket(Object httpServletRequest, Object httpServletResponse, ServerEndpointConfig sec, Map<String,String> pathParameters) instead.</div>
+</div>
 </td>
 </tr>
 </table>
@@ -190,12 +196,16 @@ extends javax.websocket.server.ServerContainer</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>doUpgrade</h4>
-<pre class="methodSignature">void&nbsp;doUpgrade&#8203;(javax.servlet.http.HttpServletRequest&nbsp;req,
+<pre class="methodSignature">@Deprecated
+void&nbsp;doUpgrade&#8203;(javax.servlet.http.HttpServletRequest&nbsp;req,
                javax.servlet.http.HttpServletResponse&nbsp;resp,
                javax.websocket.server.ServerEndpointConfig&nbsp;sec,
                java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;pathParams)
         throws javax.servlet.ServletException,
                java.io.IOException</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Since websocket-2.1 - Use jakarta.websocket.server.ServerContainer#upgradeHttpToWebSocket(Object httpServletRequest, Object httpServletResponse, ServerEndpointConfig sec, Map<String,String> pathParameters) instead.</div>
+</div>
 <div class="block">Performs a WebSocket upgrade on provided HttpServletRequest and HttpServletResponse with the specified ServerEndpointConfig. After a call to doUpgrade, the servlet response
  is committed and you will be unable to write additional data or change the response code.</div>
 <dl>

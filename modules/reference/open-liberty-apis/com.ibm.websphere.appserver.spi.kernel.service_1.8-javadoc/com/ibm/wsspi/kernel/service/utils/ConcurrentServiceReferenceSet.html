@@ -122,29 +122,33 @@ extends java.lang.Object</pre>
  service.ranking then lowest (first) service.id.
  <p>
  Usage (following OSGi DS naming conventions/patterns):
- <code><pre>
- private final ConcurrentServiceReferenceSet&ltT&gt serviceSet = new ConcurrentServiceReferenceSet&ltT&gt("referenceName");
+ <code>
  
+ <pre>
+ private final ConcurrentServiceReferenceSet&ltT&gt serviceSet = new ConcurrentServiceReferenceSet&ltT&gt("referenceName");
+
  protected void activate(ComponentContext ctx) {
  &nbsp;serviceSet.activate(ctx);
  }
- 
+
  protected void deactivate(ComponentContext ctx) {
  &nbsp;serviceSet.deactivate(ctx);
  }
- 
+
  protected void setReferenceName(ServiceReference&ltT&gt ref) {
  &nbsp;serviceSet.addReference(ref);
  }
- 
+
  protected void unsetReferenceName(ServiceReference&ltT&gt ref) {
  &nbsp;serviceSet.removeReference(ref);
  }
- 
+
  public Iterator&ltT&gt getReferenceName() {
  &nbsp;return serviceSet.getServices();
  }
- </pre></code></div>
+ </pre>
+ 
+ </code></div>
 </li>
 </ul>
 </div>

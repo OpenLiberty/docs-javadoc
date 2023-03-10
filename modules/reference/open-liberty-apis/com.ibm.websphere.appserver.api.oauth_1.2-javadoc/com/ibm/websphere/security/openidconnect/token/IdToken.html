@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -233,7 +233,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIssuer()">getIssuer</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns Issuer Identifier for the Issuer of the Response
- This is required 
+ This is required
  Case sensitive
  (claim iss)</div>
 </td>
@@ -275,12 +275,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRawIdToken()">getRawIdToken</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the raw ID token string</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRefreshToken()">getRefreshToken</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the refresh token</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSubject()">getSubject</a></span>()</code></th>
 <td class="colLast">
@@ -288,7 +295,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  This is required.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">
@@ -322,7 +329,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">java.lang.String&nbsp;getJwtId()</pre>
 <div class="block">Returns the JWT ID of the IdToken
  This is not required.
- Case sensitive 
+ Case sensitive
  (key-id jti)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -355,7 +362,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>getIssuer</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getIssuer()</pre>
 <div class="block">returns Issuer Identifier for the Issuer of the Response
- This is required 
+ This is required
  Case sensitive
  (claim iss)</div>
 <dl>
@@ -489,11 +496,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">java.lang.String&nbsp;getNonce()</pre>
 <div class="block">returns the value of nonce
  This value is optional usually.
-  
+
  But it's required when the request of a RP Client provides a nonce.
  In this case, the value of nonce must be the same as the one that
  the RP Client provides.
- 
+
  case sensitive
  (claim nonce)</div>
 <dl>
@@ -628,13 +635,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="getAllClaimsAsJson()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getAllClaimsAsJson</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getAllClaimsAsJson()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>all the claims in Json format</dd>
+</dl>
+</li>
+</ul>
+<a id="getRawIdToken()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getRawIdToken</h4>
+<pre class="methodSignature">java.lang.String&nbsp;getRawIdToken()
+                        throws com.ibm.websphere.security.WSSecurityException</pre>
+<div class="block">Returns the raw ID token string</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The raw ID token string</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>com.ibm.websphere.security.WSSecurityException</code> - Thrown if there is an error getting the run as identity.</dd>
 </dl>
 </li>
 </ul>
