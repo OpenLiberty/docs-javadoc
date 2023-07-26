@@ -1,0 +1,104 @@
+* Open Liberty SPIs
+  ** Contexts and Dependency Injection 1.2
+    *** xref:javadoc/spi/cdi-1.2.adoc[io.openliberty.cdi.spi]
+  ** Contexts and Dependency Injection 2.0
+    *** xref:javadoc/spi/cdi-2.0.adoc[io.openliberty.cdi.spi]
+  ** Federated User Registry 1.0
+    *** xref:javadoc/spi/federatedRegistry-1.0.com.ibm.wsspi.security.wim.adoc[com.ibm.wsspi.security.wim]
+    *** xref:javadoc/spi/federatedRegistry-1.0.com.ibm.wsspi.security.wim.exception.adoc[com.ibm.wsspi.security.wim.exception]
+    *** xref:javadoc/spi/federatedRegistry-1.0.com.ibm.wsspi.security.wim.model.adoc[com.ibm.wsspi.security.wim.model]
+  ** Jakarta Authentication 2.0
+    *** xref:javadoc/spi/appAuthentication-2.0.adoc[com.ibm.wsspi.security.jaspi]
+  ** Jakarta Authentication 3.0
+    *** xref:javadoc/spi/appAuthentication-3.0.adoc[com.ibm.wsspi.security.jaspi]
+  ** Jakarta Contexts and Dependency Injection 3.0
+    *** xref:javadoc/spi/cdi-3.0.adoc[io.openliberty.cdi.spi]
+  ** Jakarta Contexts and Dependency Injection 4.0
+    *** xref:javadoc/spi/cdi-4.0.adoc[io.openliberty.cdi.spi]
+  ** Jakarta RESTful Web Services 3.0 Client
+    *** xref:javadoc/spi/restfulWSClient-3.0.adoc[com.ibm.wsspi.webservices.handler]
+  ** Jakarta Server Pages 3.0
+    *** xref:javadoc/spi/pages-3.0.adoc[com.ibm.wsspi.jsp.taglib.config]
+  ** Jakarta Server Pages 3.1
+    *** xref:javadoc/spi/pages-3.1.adoc[com.ibm.wsspi.jsp.taglib.config]
+  ** Jakarta Servlet 5.0
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.websphere.servlet.filter.adoc[com.ibm.websphere.servlet.filter]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.websphere.servlet.request.adoc[com.ibm.websphere.servlet.request]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.websphere.servlet.response.adoc[com.ibm.websphere.servlet.response]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.websphere.webcontainer.async.adoc[com.ibm.websphere.webcontainer.async]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.ws.webcontainer.extension.adoc[com.ibm.ws.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.ws.webcontainer.spiadapter.collaborator.adoc[com.ibm.ws.webcontainer.spiadapter.collaborator]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.adoc[com.ibm.wsspi.webcontainer]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.collaborator.adoc[com.ibm.wsspi.webcontainer.collaborator]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.extension.adoc[com.ibm.wsspi.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.filter.adoc[com.ibm.wsspi.webcontainer.filter]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.metadata.adoc[com.ibm.wsspi.webcontainer.metadata]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.osgi.extension.adoc[com.ibm.wsspi.webcontainer.osgi.extension]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.servlet.adoc[com.ibm.wsspi.webcontainer.servlet]
+    *** xref:javadoc/spi/servlet-5.0.com.ibm.wsspi.webcontainer.webapp.adoc[com.ibm.wsspi.webcontainer.webapp]
+  ** Jakarta Servlet 6.0
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.websphere.servlet.filter.adoc[com.ibm.websphere.servlet.filter]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.websphere.servlet.request.adoc[com.ibm.websphere.servlet.request]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.websphere.servlet.response.adoc[com.ibm.websphere.servlet.response]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.websphere.webcontainer.async.adoc[com.ibm.websphere.webcontainer.async]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.ws.webcontainer.extension.adoc[com.ibm.ws.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.ws.webcontainer.spiadapter.collaborator.adoc[com.ibm.ws.webcontainer.spiadapter.collaborator]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.adoc[com.ibm.wsspi.webcontainer]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.collaborator.adoc[com.ibm.wsspi.webcontainer.collaborator]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.extension.adoc[com.ibm.wsspi.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.filter.adoc[com.ibm.wsspi.webcontainer.filter]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.metadata.adoc[com.ibm.wsspi.webcontainer.metadata]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.osgi.extension.adoc[com.ibm.wsspi.webcontainer.osgi.extension]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.servlet.adoc[com.ibm.wsspi.webcontainer.servlet]
+    *** xref:javadoc/spi/servlet-6.0.com.ibm.wsspi.webcontainer.webapp.adoc[com.ibm.wsspi.webcontainer.webapp]
+  ** Java Authentication SPI for Containers 1.1
+    *** xref:javadoc/spi/jaspic-1.1.adoc[com.ibm.wsspi.security.jaspi]
+  ** Java RESTful Services Client 2.1
+    *** xref:javadoc/spi/jaxrsClient-2.1.adoc[com.ibm.wsspi.webservices.handler]
+  ** Java Servlets 3.1
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.websphere.servlet.filter.adoc[com.ibm.websphere.servlet.filter]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.websphere.servlet.request.adoc[com.ibm.websphere.servlet.request]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.websphere.servlet.response.adoc[com.ibm.websphere.servlet.response]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.websphere.webcontainer.async.adoc[com.ibm.websphere.webcontainer.async]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.ws.webcontainer.extension.adoc[com.ibm.ws.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.ws.webcontainer.spiadapter.collaborator.adoc[com.ibm.ws.webcontainer.spiadapter.collaborator]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.adoc[com.ibm.wsspi.webcontainer]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.collaborator.adoc[com.ibm.wsspi.webcontainer.collaborator]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.extension.adoc[com.ibm.wsspi.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.filter.adoc[com.ibm.wsspi.webcontainer.filter]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.metadata.adoc[com.ibm.wsspi.webcontainer.metadata]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.osgi.extension.adoc[com.ibm.wsspi.webcontainer.osgi.extension]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.servlet.adoc[com.ibm.wsspi.webcontainer.servlet]
+    *** xref:javadoc/spi/servlet-3.1.com.ibm.wsspi.webcontainer.webapp.adoc[com.ibm.wsspi.webcontainer.webapp]
+  ** Java Servlets 4.0
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.websphere.servlet.filter.adoc[com.ibm.websphere.servlet.filter]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.websphere.servlet.request.adoc[com.ibm.websphere.servlet.request]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.websphere.servlet.response.adoc[com.ibm.websphere.servlet.response]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.websphere.webcontainer.async.adoc[com.ibm.websphere.webcontainer.async]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.ws.webcontainer.extension.adoc[com.ibm.ws.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.ws.webcontainer.spiadapter.collaborator.adoc[com.ibm.ws.webcontainer.spiadapter.collaborator]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.adoc[com.ibm.wsspi.webcontainer]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.collaborator.adoc[com.ibm.wsspi.webcontainer.collaborator]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.extension.adoc[com.ibm.wsspi.webcontainer.extension]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.filter.adoc[com.ibm.wsspi.webcontainer.filter]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.metadata.adoc[com.ibm.wsspi.webcontainer.metadata]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.osgi.extension.adoc[com.ibm.wsspi.webcontainer.osgi.extension]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.servlet.adoc[com.ibm.wsspi.webcontainer.servlet]
+    *** xref:javadoc/spi/servlet-4.0.com.ibm.wsspi.webcontainer.webapp.adoc[com.ibm.wsspi.webcontainer.webapp]
+  ** Java Web Services 2.2
+    *** xref:javadoc/spi/jaxws-2.2.adoc[com.ibm.wsspi.webservices.handler]
+  ** JavaServer Pages 2.2
+    *** xref:javadoc/spi/jsp-2.2.adoc[com.ibm.wsspi.jsp.taglib.config]
+  ** JavaServer Pages 2.3
+    *** xref:javadoc/spi/jsp-2.3.adoc[com.ibm.wsspi.jsp.taglib.config]
+  ** OAuth 2.0
+    *** xref:javadoc/spi/oauth-2.0.com.ibm.wsspi.security.oauth20.adoc[com.ibm.wsspi.security.oauth20]
+    *** xref:javadoc/spi/oauth-2.0.com.ibm.wsspi.security.openidconnect.adoc[com.ibm.wsspi.security.openidconnect]
+  ** OpenAPI 3.1
+    *** xref:javadoc/spi/openapi-3.1.adoc[com.ibm.wsspi.openapi31]
+  ** Secure Socket Layer 1.0
+    *** xref:javadoc/spi/ssl-1.0.adoc[com.ibm.wsspi.ssl]
+  ** WS-AT Service 1.2
+    *** xref:javadoc/spi/wsAtomicTransaction-1.2.adoc[com.ibm.wsspi.webservices.wsat]
+  ** Web Response Cache 1.0
+    *** xref:javadoc/spi/webCache-1.0.adoc[com.ibm.wsspi.cache.web]
