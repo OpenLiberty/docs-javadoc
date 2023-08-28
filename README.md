@@ -29,4 +29,4 @@ Complete these steps 2-3 days before the release to ensure that you have time to
 12. In the `docs-javadoc` repository, create a PR from the `staging` branch into the `prod` branch.
 13. Get the PR reviewed by a docs team member and merge it.
 
-The updated Javadoc will publish to openliberty.io with the rest of the 4-week release. For more information abou the publishing process, see [Publishing a new release of the open Liberty Docs](https://github.com/OpenLiberty/docs-playbook#publishing-a-new-release-of-open-liberty-docs).
+The updated Javadoc publishes to openliberty.io with the rest of the 4-week release. For more information about the publishing process, see [Publishing a new release of the open Liberty Docs](https://github.com/OpenLiberty/docs-playbook#publishing-a-new-release-of-open-liberty-docs).
