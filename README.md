@@ -7,7 +7,7 @@ This repository contains the Javadoc that is published on https://openliberty.io
 - Jakarta EE APIs
 - Java EE APIs
 
-Microprofile and Jakarta API documentation is updated with each major release from those platforms. The Open Liberty API and SPI documentation is updated with each 4-week release of the runtime. 
+MicroProfile and Jakarta API documentation is updated with each major release from those platforms. The Open Liberty API and SPI documentation is updated with each 4-week release of the runtime. 
 
 ## Preparing Open Liberty API and SPI Javadoc files for publication
 
