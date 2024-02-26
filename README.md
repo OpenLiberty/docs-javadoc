@@ -42,7 +42,7 @@ Complete these steps 2-3 days before the release to ensure that you have time to
     b. Copy the `feature-nav-api-openliberty.adoc` and `feature-nav-spi-openliberty.adoc` files from the `nav` directory of your local extracted copy of the `com.ibm.openliberty.javadoc.doc` folder to the `modules/reference/partials` directory in the docs-generated repo.
 
     c. Copy the `api` and `spi` directories from the `iframe` directory of your local extracted copy of the
-      `com.ibm.openliberty.javadoc.doc` folder to the `modules/reference/partials` directory in the docs-generated repo.
+      `com.ibm.openliberty.javadoc.doc` folder to the `modules/reference/pages/javadoc` directory in the docs-generated repo.
 
     d. Create a PR from your working branch to the `draft` branch of the docs-generated repo, get it reviewed and merge it in.
 
