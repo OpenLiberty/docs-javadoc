@@ -37,12 +37,12 @@ org.eclipse.microprofile.context
 org.eclipse.microprofile.context.spi
 org.eclipse.microprofile.faulttolerance
 org.eclipse.microprofile.faulttolerance.exceptions
-org.eclipse.microprofile.health
-org.eclipse.microprofile.health.spi
 org.eclipse.microprofile.jwt
 org.eclipse.microprofile.jwt.config
 org.eclipse.microprofile.metrics
 org.eclipse.microprofile.metrics.annotation
+org.eclipse.microprofile.microprofile.health
+org.eclipse.microprofile.microprofile.health.spi
 org.eclipse.microprofile.openapi
 org.eclipse.microprofile.openapi.annotations
 org.eclipse.microprofile.openapi.annotations.callbacks
