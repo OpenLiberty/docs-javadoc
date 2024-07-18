@@ -2,7 +2,6 @@ javax.annotation
 javax.annotation.security
 javax.annotation.sql
 javax.decorator
-javax.enterprise.concurrent
 javax.enterprise.context
 javax.enterprise.context.control
 javax.enterprise.context.spi
