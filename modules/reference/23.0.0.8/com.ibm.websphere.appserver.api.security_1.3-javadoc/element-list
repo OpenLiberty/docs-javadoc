@@ -1,5 +1,0 @@
-com.ibm.websphere.security.auth.callback
-com.ibm.wsspi.security.auth.callback
-com.ibm.wsspi.security.common.auth.module
-com.ibm.wsspi.security.tai
-com.ibm.wsspi.security.token
