@@ -472,12 +472,14 @@ div.table-tabs > button.table-tab {
 }
 .col-first a:link, .col-first a:visited,
 .col-second a:link, .col-second a:visited,
+.col-first a:link, .col-first a:visited,
+.col-second a:link, .col-second a:visited,
 .col-constructor-name a:link, .col-constructor-name a:visited,
 .col-summary-item-name a:link, .col-summary-item-name a:visited,
 .constant-values-container a:link, .constant-values-container a:visited,
 .all-classes-container a:link, .all-classes-container a:visited,
 .all-packages-container a:link, .all-packages-container a:visited {
-    font-weight:540;
+    font-weight:bold;
 }
 .table-sub-heading-color {
     background-color:#EEEEFF;
