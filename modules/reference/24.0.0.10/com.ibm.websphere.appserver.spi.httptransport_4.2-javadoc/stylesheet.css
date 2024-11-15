@@ -477,7 +477,7 @@ div.table-tabs > button.table-tab {
 .constant-values-container a:link, .constant-values-container a:visited,
 .all-classes-container a:link, .all-classes-container a:visited,
 .all-packages-container a:link, .all-packages-container a:visited {
-    font-weight:540;
+    font-weight:bold;
 }
 .table-sub-heading-color {
     background-color:#EEEEFF;
