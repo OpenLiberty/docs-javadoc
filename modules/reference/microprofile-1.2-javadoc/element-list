@@ -22,6 +22,8 @@ org.eclipse.microprofile.auth
 org.eclipse.microprofile.config
 org.eclipse.microprofile.config.inject
 org.eclipse.microprofile.config.spi
+org.eclipse.microprofile.context
+org.eclipse.microprofile.context.spi
 org.eclipse.microprofile.faulttolerance
 org.eclipse.microprofile.faulttolerance.exceptions
 org.eclipse.microprofile.health
@@ -29,3 +31,5 @@ org.eclipse.microprofile.health.spi
 org.eclipse.microprofile.jwt
 org.eclipse.microprofile.metrics
 org.eclipse.microprofile.metrics.annotation
+org.eclipse.microprofile.reactive.streams.operators
+org.eclipse.microprofile.reactive.streams.operators.spi
