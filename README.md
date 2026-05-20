@@ -55,3 +55,5 @@ Complete these steps 2-3 days before the release to ensure that you have time to
 14. Get the PR reviewed by a docs team member and merge it.
 
 The updated Javadoc publishes to openliberty.io with the rest of the 4-week release. For more information about the publishing process, see [Publishing a new release of the open Liberty Docs](https://github.com/OpenLiberty/docs-playbook#publishing-a-new-release-of-open-liberty-docs).
+
+**ATTENTION** - Every few years when a new jakartaee platform version is introduced will need to grab the next java doc jar file from https://repo.maven.apache.org/maven2/jakarta/platform/jakarta.jakartaee-api/  for example the contents of https://repo.maven.apache.org/maven2/jakarta/platform/jakarta.jakartaee-api/11.0.0/jakarta.jakartaee-api-11.0.0-javadoc.jar should be unzipped into the https://github.com/OpenLiberty/docs-javadoc/tree/prod/modules/reference/liberty-jakartaee11-javadoc directory.
