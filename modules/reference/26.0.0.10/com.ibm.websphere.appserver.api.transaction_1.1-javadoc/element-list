@@ -1,0 +1,4 @@
+com.ibm.tx.jta
+com.ibm.websphere.jtaextensions
+com.ibm.websphere.uow
+com.ibm.wsspi.uow
