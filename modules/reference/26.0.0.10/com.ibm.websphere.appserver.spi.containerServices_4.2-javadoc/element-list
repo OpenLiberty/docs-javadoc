@@ -1,0 +1,8 @@
+com.ibm.ws.container.service.annotations
+com.ibm.ws.container.service.app.deploy
+com.ibm.ws.container.service.config
+com.ibm.ws.container.service.naming
+com.ibm.ws.container.service.security
+com.ibm.ws.container.service.state
+com.ibm.ws.serialization
+com.ibm.wsspi.resource
