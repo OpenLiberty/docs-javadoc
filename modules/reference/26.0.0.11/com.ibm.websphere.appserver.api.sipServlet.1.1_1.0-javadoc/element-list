@@ -1,0 +1,6 @@
+com.ibm.websphere.sip
+com.ibm.websphere.sip.resolver
+com.ibm.websphere.sip.resolver.events
+com.ibm.websphere.sip.resolver.exception
+com.ibm.websphere.sip.unmatchedMessages
+com.ibm.websphere.sip.unmatchedMessages.events
