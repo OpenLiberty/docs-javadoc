@@ -1,0 +1,8 @@
+com.ibm.websphere.application
+com.ibm.websphere.filemonitor
+com.ibm.websphere.logging
+com.ibm.websphere.runtime.update
+com.ibm.websphere.security
+com.ibm.websphere.security.auth
+com.ibm.websphere.security.cred
+com.ibm.wsspi.security.registry
